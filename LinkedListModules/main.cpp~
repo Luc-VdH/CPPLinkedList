@@ -1,0 +1,22 @@
+#include<iostream>
+#include "LinkedList.h"
+
+using namespace std;
+
+int main(){
+    LinkedList names;
+    string input = "in";
+    
+    
+    cout << "Enter Names, q to quit:" << endl;
+    while(input[0] != 'q'){
+        cin >> input;
+        names.addNode(input);
+    }
+    
+    cout << names.printNode(0) << endl;
+    
+    
+    
+    return 0;
+}

@@ -1,0 +1,15 @@
+#include<iostream>
+#include "node.h"
+
+using namespace std;
+
+class LinkedList{
+    private:
+        node *head;
+        node *tail;
+    public:
+        LinkedList();
+        void addNode(string in);
+        string printNode(int index);
+        int getLength();        
+};
